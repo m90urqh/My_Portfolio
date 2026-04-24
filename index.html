@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Data &amp; Design &amp; Code</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&family=Rajdhani:wght@300;400;500;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ░░ CANVAS BACKGROUND ░░ -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ░░ LOADER ░░ -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <div class="loader-text" id="loader-text">INITIALIZING...</div>
+    </div>
+  </div>
+
+  <!-- ░░ CURSOR ░░ -->
+  <div id="cursor"></div>
+  <div id="cursor-trail"></div>
+
+  <!-- ░░ NAV ░░ -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="glitch" data-text="&lt;PORTFOLIO/&gt;">&lt;PORTFOLIO/&gt;</span>
+    </div>
+    <div class="nav-links">
+      <a href="#hero" class="nav-link active" data-section="hero">HOME</a>
+      <a href="#data-science" class="nav-link" data-section="data-science">DATA&amp;ML</a>
+      <a href="#3d-models" class="nav-link" data-section="3d-models">3D</a>
+      <a href="#graphic-design" class="nav-link" data-section="graphic-design">DESIGN</a>
+      <a href="#game-dev" class="nav-link" data-section="game-dev">GAME DEV</a>
+      <a href="#arch-linux" class="nav-link" data-section="arch-linux">ARCH</a>
+      <a href="#certificates" class="nav-link" data-section="certificates">CERTS</a>
+    </div>
+    <div class="nav-menu-btn" id="menu-btn">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ░░ MOBILE NAV ░░ -->
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="#hero" class="mobile-link">HOME</a>
+    <a href="#data-science" class="mobile-link">DATA &amp; ML</a>
+    <a href="#3d-models" class="mobile-link">3D MODELS</a>
+    <a href="#graphic-design" class="mobile-link">GRAPHIC DESIGN</a>
+    <a href="#game-dev" class="mobile-link">GAME DEV</a>
+    <a href="#arch-linux" class="mobile-link">ARCH LINUX</a>
+    <a href="#certificates" class="mobile-link">CERTIFICATES</a>
+  </div>
+
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░ MAIN ░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <main>
+
+    <!-- ══════════════ HERO ══════════════ -->
+    <section id="hero" class="section hero-section">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span class="dot"></span> AVAILABLE FOR PROJECTS
+        </div>
+        <h1 class="hero-title">
+          <span class="line1 glitch" data-text="HELLO,">HELLO,</span>
+          <span class="line2">I'M A <span class="accent-teal typed-text" id="typed"></span></span>
+        </h1>
+        <p class="hero-sub">
+          Building at the intersection of <span class="accent-teal">data</span>,
+          <span class="accent-silver">design</span>, and
+          <span class="accent-purple">code</span>.
+          Futuristic by nature. Arch by choice.
+        </p>
+        <div class="hero-badges">
+          <span class="badge badge-miku">◈ Hatsune Miku Fan</span>
+          <span class="badge badge-arch">◈ Arch Linux</span>
+          <span class="badge badge-silver">◈ Silver the Hedgehog</span>
+        </div>
+        <div class="hero-btns">
+          <a href="#data-science" class="btn btn-primary">EXPLORE WORK</a>
+          <a href="mailto:your@email.com" class="btn btn-ghost">CONTACT ME</a>
+        </div>
+        <div class="hero-scroll-hint">
+          <span>SCROLL</span>
+          <div class="scroll-line"></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="orbit-container">
+          <div class="orbit-ring ring1"></div>
+          <div class="orbit-ring ring2"></div>
+          <div class="orbit-ring ring3"></div>
+          <div class="orbit-core">
+            <div class="core-hex"></div>
+            <div class="core-inner">
+              <span>&lt;/&gt;</span>
+            </div>
+          </div>
+          <div class="orbit-dot dot1"></div>
+          <div class="orbit-dot dot2"></div>
+          <div class="orbit-dot dot3"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ DATA SCIENCE & ML ══════════════ -->
+    <section id="data-science" class="section project-section">
+      <div class="section-header" data-color="teal">
+        <div class="section-tag">
+          <span class="tag-icon">▣</span>
+          <span class="tag-num">01</span>
+        </div>
+        <h2 class="section-title">
+          DATA SCIENCE<br/><span class="title-accent">&amp; MACHINE LEARNING</span>
+        </h2>
+        <p class="section-desc">
+          Transforming raw data into meaningful insights through neural networks,
+          statistical models, and visualization pipelines.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Placeholder 1 -->
+        <div class="project-card card-placeholder reveal-card">
+          <div class="card-top-bar">
+            <span class="card-lang">Python</span>
+            <span class="card-status status-wip">[ EXAMPLE ]</span>
+          </div>
+          <div class="card-icon">🧠</div>
+          <h3 class="card-title">Neural Sentinel <span class="placeholder-tag">lorem ipsum</span></h3>
+          <p class="card-desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. A deep-learning
+            classification pipeline trained on synthesized tabular data — achieves
+            94 % accuracy via an ensemble of gradient-boosted trees and a lightweight MLP.
+          </p>
+          <div class="card-tags">
+            <span>PyTorch</span>
+            <span>scikit-learn</span>
+            <span>Pandas</span>
+            <span>Matplotlib</span>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="card-link" aria-label="View code">{ code }</a>
+            <a href="#" class="card-link" aria-label="Live demo">[ demo ]</a>
+          </div>
+        </div>
+
+        <!-- ADD YOUR PROJECTS BELOW THIS LINE -->
+        <!-- Copy the card above, remove class "card-placeholder", fill in your content -->
+
+        <div class="card-add-new">
+          <div class="add-inner">
+            <span class="add-icon">＋</span>
+            <span>Add your project here</span>
+            <code class="add-hint">Copy the example card above</code>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════ 3D MODELS ══════════════ -->
+    <section id="3d-models" class="section project-section alt-section">
+      <div class="section-header" data-color="silver">
+        <div class="section-tag">
+          <span class="tag-icon">▣</span>
+          <span class="tag-num">02</span>
+        </div>
+        <h2 class="section-title">
+          3D<br/><span class="title-accent">MODELS</span>
+        </h2>
+        <p class="section-desc">
+          From concept sketches to fully sculpted and rigged meshes.
+          Blender-forged, detail-obsessed, polygon-pure.
+        </p>
+      </div>
+
+      <div class="projects-grid grid-gallery">
+
+        <div class="project-card card-gallery card-placeholder reveal-card">
+          <div class="card-top-bar">
+            <span class="card-lang">Blender</span>
+            <span class="card-status status-wip">[ EXAMPLE ]</span>
+          </div>
+          <div class="gallery-preview">
+            <div class="gallery-placeholder">
+              <div class="spinning-cube">
+                <div class="face front"></div>
+                <div class="face back"></div>
+                <div class="face left"></div>
+                <div class="face right"></div>
+                <div class="face top"></div>
+                <div class="face bottom"></div>
+              </div>
+            </div>
+          </div>
+          <h3 class="card-title">Cyber-Miku Figurine <span class="placeholder-tag">lorem ipsum</span></h3>
+          <p class="card-desc">
+            Lorem ipsum dolor sit amet. A fan-art 3D sculpt blending vocaloid
+            aesthetics with chrome-plated futurism — teal tinted hair, holographic
+            projections, rendered in Cycles at 4K.
+          </p>
+          <div class="card-tags">
+            <span>Blender</span>
+            <span>Cycles</span>
+            <span>Sculpt Mode</span>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="card-link">{ .blend }</a>
+            <a href="#" class="card-link">[ renders ]</a>
+          </div>
+        </div>
+
+        <div class="card-add-new">
+          <div class="add-inner">
+            <span class="add-icon">＋</span>
+            <span>Add your project here</span>
+            <code class="add-hint">Copy the example card above</code>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════ GRAPHIC DESIGN ══════════════ -->
+    <section id="graphic-design" class="section project-section">
+      <div class="section-header" data-color="purple">
+        <div class="section-tag">
+          <span class="tag-icon">▣</span>
+          <span class="tag-num">03</span>
+        </div>
+        <h2 class="section-title">
+          GRAPHIC<br/><span class="title-accent">DESIGNS</span>
+        </h2>
+        <p class="section-desc">
+          Posters, brand identities, illustrations, and digital art —
+          every pixel placed with intent.
+        </p>
+      </div>
+
+      <div class="projects-grid grid-gallery">
+
+        <div class="project-card card-gallery card-placeholder reveal-card">
+          <div class="card-top-bar">
+            <span class="card-lang">Illustrator / Photoshop</span>
+            <span class="card-status status-wip">[ EXAMPLE ]</span>
+          </div>
+          <div class="gallery-preview design-preview">
+            <div class="design-mock">
+              <div class="dm-bg"></div>
+              <div class="dm-accent1"></div>
+              <div class="dm-accent2"></div>
+              <div class="dm-text">DESIGN</div>
+            </div>
+          </div>
+          <h3 class="card-title">Holographic Poster Series <span class="placeholder-tag">lorem ipsum</span></h3>
+          <p class="card-desc">
+            Lorem ipsum dolor sit amet. A series of A2 posters merging
+            vaporwave and cyberpunk aesthetics — gradient chrome foil effects
+            achieved purely in vector with post-processing in Photoshop.
+          </p>
+          <div class="card-tags">
+            <span>Illustrator</span>
+            <span>Photoshop</span>
+            <span>Print Design</span>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="card-link">{ behance }</a>
+            <a href="#" class="card-link">[ gallery ]</a>
+          </div>
+        </div>
+
+        <div class="card-add-new">
+          <div class="add-inner">
+            <span class="add-icon">＋</span>
+            <span>Add your project here</span>
+            <code class="add-hint">Copy the example card above</code>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════ GAME DEVELOPMENT ══════════════ -->
+    <section id="game-dev" class="section project-section alt-section">
+      <div class="section-header" data-color="teal">
+        <div class="section-tag">
+          <span class="tag-icon">▣</span>
+          <span class="tag-num">04</span>
+        </div>
+        <h2 class="section-title">
+          GAME<br/><span class="title-accent">DEVELOPMENT</span>
+        </h2>
+        <p class="section-desc">
+          Indie games, game jams, mechanics prototypes — from pixel art
+          side-scrollers to 3D adventure experiments.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card card-placeholder reveal-card">
+          <div class="card-top-bar">
+            <span class="card-lang">Godot / GDScript</span>
+            <span class="card-status status-wip">[ EXAMPLE ]</span>
+          </div>
+          <div class="card-icon">🎮</div>
+          <h3 class="card-title">Silver Run <span class="placeholder-tag">lorem ipsum</span></h3>
+          <p class="card-desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            A psychokinesis-powered platformer inspired by Silver the Hedgehog's
+            moveset — telekinetically hurl objects at enemies across procedurally
+            generated levels in a chrome-drenched future city.
+          </p>
+          <div class="card-tags">
+            <span>Godot 4</span>
+            <span>GDScript</span>
+            <span>Pixel Art</span>
+            <span>Procedural Gen</span>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="card-link">{ itch.io }</a>
+            <a href="#" class="card-link">[ source ]</a>
+          </div>
+        </div>
+
+        <div class="card-add-new">
+          <div class="add-inner">
+            <span class="add-icon">＋</span>
+            <span>Add your project here</span>
+            <code class="add-hint">Copy the example card above</code>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════ ARCH LINUX ══════════════ -->
+    <section id="arch-linux" class="section project-section">
+      <div class="section-header" data-color="arch">
+        <div class="section-tag">
+          <span class="tag-icon">▣</span>
+          <span class="tag-num">05</span>
+        </div>
+        <h2 class="section-title">
+          ARCH LINUX<br/><span class="title-accent">CUSTOMIZATION</span>
+        </h2>
+        <p class="section-desc">
+          Dotfiles, window manager configs, scripts and themes.
+          Because btw, I use Arch.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card card-terminal card-placeholder reveal-card">
+          <div class="card-top-bar">
+            <span class="card-lang terminal-title">
+              <span class="t-btn t-close"></span>
+              <span class="t-btn t-min"></span>
+              <span class="t-btn t-max"></span>
+              ~/dotfiles
+            </span>
+            <span class="card-status status-wip">[ EXAMPLE ]</span>
+          </div>
+          <div class="terminal-body">
+            <div class="t-line"><span class="t-prompt">❯</span> <span class="t-cmd">cat README.md</span></div>
+            <div class="t-line t-output"># Hyprland Dotfiles</div>
+            <div class="t-line t-output">Teal-themed Wayland setup with eww bar,</div>
+            <div class="t-line t-output">rofi launcher, and dunst notifications.</div>
+            <div class="t-line"><span class="t-prompt">❯</span> <span class="t-cmd">neofetch</span></div>
+            <div class="t-line t-output t-accent">OS: Arch Linux x86_64</div>
+            <div class="t-line t-output t-accent">WM: Hyprland</div>
+            <div class="t-line t-output t-accent">Theme: MikuDark v2.0</div>
+            <div class="t-line t-output t-accent">Shell: fish + starship</div>
+            <div class="t-line"><span class="t-prompt">❯</span> <span class="t-cursor-blink">█</span></div>
+          </div>
+          <h3 class="card-title">MikuDark Dotfiles <span class="placeholder-tag">lorem ipsum</span></h3>
+          <p class="card-desc">
+            Lorem ipsum dolor sit amet. A full Hyprland rice — custom eww widgets,
+            teal Waybar, rofi power-menu, fish shell with starship prompt, and
+            a matching nvim colorscheme all sharing the same miku-teal palette.
+          </p>
+          <div class="card-tags">
+            <span>Hyprland</span>
+            <span>eww</span>
+            <span>fish</span>
+            <span>nvim</span>
+            <span>rofi</span>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="card-link">{ github }</a>
+            <a href="#" class="card-link">[ screenshots ]</a>
+          </div>
+        </div>
+
+        <div class="card-add-new">
+          <div class="add-inner">
+            <span class="add-icon">＋</span>
+            <span>Add your config here</span>
+            <code class="add-hint">Copy the example card above</code>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════ CERTIFICATES ══════════════ -->
+    <section id="certificates" class="section project-section alt-section">
+      <div class="section-header" data-color="silver">
+        <div class="section-tag">
+          <span class="tag-icon">▣</span>
+          <span class="tag-num">06</span>
+        </div>
+        <h2 class="section-title">
+          CERTIFI<br/><span class="title-accent">CATES</span>
+        </h2>
+        <p class="section-desc">
+          Verified skills, completed courses, and earned credentials
+          from across the learning universe.
+        </p>
+      </div>
+
+      <div class="projects-grid certs-grid">
+
+        <div class="cert-card card-placeholder reveal-card">
+          <div class="cert-ribbon"></div>
+          <div class="cert-icon">🏅</div>
+          <div class="cert-body">
+            <span class="cert-issuer">Coursera / DeepLearning.AI</span>
+            <h3 class="cert-title">Machine Learning Specialization <span class="placeholder-tag">lorem ipsum</span></h3>
+            <p class="cert-desc">
+              Lorem ipsum dolor sit amet — three-course specialization covering
+              supervised learning, neural networks, decision trees, and
+              unsupervised learning with Andrew Ng.
+            </p>
+            <div class="cert-meta">
+              <span class="cert-date">📅 Jan 2025</span>
+              <span class="cert-id">ID: XXXXXXXXXX</span>
+            </div>
+          </div>
+          <a href="#" class="card-link cert-verify">[ verify ]</a>
+        </div>
+
+        <div class="card-add-new">
+          <div class="add-inner">
+            <span class="add-icon">＋</span>
+            <span>Add your certificate here</span>
+            <code class="add-hint">Copy the example card above</code>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo glitch" data-text="&lt;PORTFOLIO/&gt;">&lt;PORTFOLIO/&gt;</div>
+      <p class="footer-sub">Built with <span class="accent-teal">♥</span> on Arch Linux</p>
+      <div class="footer-links">
+        <a href="mailto:your@email.com" class="footer-link">EMAIL</a>
+        <a href="https://github.com/" target="_blank" class="footer-link">GITHUB</a>
+        <a href="#" class="footer-link">LINKEDIN</a>
+      </div>
+      <p class="footer-copy">© 2025 — All rights reserved</p>
+    </div>
+  </footer>
+
+  <!-- ░░ SCROLL PROGRESS ░░ -->
+  <div id="scroll-progress"></div>
+
+  <!-- ░░ SECTION TRANSITION OVERLAY ░░ -->
+  <div id="transition-overlay">
+    <div class="toverlay-bar"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
