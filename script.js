@@ -265,7 +265,7 @@
     '3D ARTIST',
     'GRAPHIC DESIGNER',
     'GAME DEVELOPER',
-    'ARCH LINUX RICER',
+    'ARCH LINUX USER',
   ];
   let wIdx = 0, cIdx = 0, deleting = false;
   const TYPING_SPEED = 90, DELETE_SPEED = 50, PAUSE = 1600;
